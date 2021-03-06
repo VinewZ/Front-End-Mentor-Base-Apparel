@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+.flexContainer{
+    display: flex;
+    flex: 1;
+    padding: 0 3rem;
+}
+.logo{
+    align-self: start;
+    padding: 2rem 0 8rem;
+}
+.textContainer{
+    display: flex;
+    flex: 1 50vw;
+    flex-direction: column;
+    padding: 0 5rem 0 5rem;
+}
+.heroContainer{
+    display: flex;
+    flex: 0 50vw;
+}
+img{
+    max-width: 100%;
+    object-fit: cover;
+}
+
+h2{
+    color: #c69c9b;
+    font-family: 'Josefin Sans';
+    font-weight: 300;
+    font-size: 5vw;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+}
+.subtitle{
+    color: #413839;
+    font-family: 'Josefin Sans';
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 5vw;
+    letter-spacing: 1rem;
+
+}
+
+p{
+    color: #ccabad;
+    font-family: 'Josefin Sans';
+    line-height: 1.7rem;
+    font-size: 1.3vw;
+    padding: 0.6rem 5rem 0 0;
+}
+.inputField{
+    position: relative;
+    width: 70%
+}
+input[type="email"]{
+    position: relative;
+    width: 100%;
+    border-radius: 4rem;
+    font-family: 'Josefin Sans';
+    padding: 1rem;
+    border: 1px solid #f2e1e1;
+}
+::placeholder{
+    color: #decdcf;
+}
+button{
+    padding: 1.5rem 3rem;
+    color: #fff;
+    border: none;
+    border-radius: 3rem;
+    cursor: pointer;
+    position: absolute;
+    top: -0.1rem;
+    right: -2.2rem;
+    background-image: url(./images/icon-arrow.svg), linear-gradient(to right, #f6b8b7 , #ef9292);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+button:hover{
+    background-image: url(./images/icon-arrow.svg), linear-gradient(to right, #f6b8b7 , #ef9292);
+    box-shadow: 0 0 30px 15px rgba(235, 201, 204, 0.5);
+    transition: 0.2s;
+}
+
+.icon-arrow{
+    position: relative;
+    right: 7.2rem;
+    bottom: 13.8rem;
+}
+
+.hero2{
+    display: none;
+}
+
+@media (max-width: 1000px){
+    .heroContainer{
+        display: none;
+    }
+    .hero2{
+        display: block;
+        align-self: start;
+        width: 100%;
+        padding-bottom: 2rem;
+    }
+    .flexContainer{
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+    .textContainer{
+        align-items:center;
+    }
+    .logo{
+        margin: auto;
+        padding: 2rem;
+    }
+    h2{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        padding: 5vw 10vw;
+    }
+    footer p{
+        padding: 0
+    }
+}
