@@ -97,7 +97,7 @@ button:hover{
     display: none;
 }
 
-@media (max-width: 1000px){
+@media screen and (max-width: 1000px){
     .heroContainer{
         display: none;
     }
@@ -125,8 +125,27 @@ button:hover{
     p{
         text-align: center;
         padding: 5vw 10vw;
+        font-size: 2vw;
     }
     footer p{
         padding: 0
+    }
+}
+@media screen and (max-width: 768px) {
+    p{
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width:510px){
+    p{
+        font-size: 4vw;
+    }
+    input[type="email"]{
+        width:100%;
+    }
+    button{
+        position: relative;
+        right: -10vw;
     }
 }
